@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>캐릭터 프로필 목록</title>
+  <!-- Do Hyeon 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Do Hyeon", sans-serif;
+      background: #f7f7f7;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      aspect-ratio: 1/1; /* 정사각형 비율 */
+      object-fit: cover;
+      display: block;
+    }
+    .card p {
+      margin: 12px 0;
+      font-size: 18px;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <h1> 캐릭터 목록</h1>
+  <div class="grid">
+    <a href="cha1.html" class="card">
+      <img src="./images/1.png" alt="1">
+      <p>캐릭터1</p>
+    </a>
+    <a href="cha2.html" class="card">
+      <img src="./images/2.png" alt="2">
+      <p>캐릭터2</p>
+    </a>
+    <a href="cha3.html" class="card">
+      <img src="./images/3.png" alt="3">
+      <p>캐릭터3</p>
+    </a>
+    <a href="cha4.html" class="card">
+      <img src="./images/4.png" alt="4">
+      <p>캐릭터4</p>
+    </a>
+    <a href="cha5.html" class="card">
+      <img src="./images/5.png" alt="5">
+      <p>캐릭터5</p>
+    </a>
+    <a href="cha6.html" class="card">
+      <img src="./images/6.png" alt="6">
+      <p>캐릭터6</p>
+    </a>
+ 
+  </div>
+  <p style="margin-top:30px"><a href="index.html">← 메인 페이지로 돌아가기</a></p>
+</body>
+</html>
